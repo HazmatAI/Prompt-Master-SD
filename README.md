@@ -3,7 +3,7 @@ Prompt master is a Discord Bot with the intention of working as PNG information 
 
 ##  FYI 
 
-I barely know how to use GitHub or code. Big portion of the code was from a commission on Fivver. I will try my best to correct my mistake. Any kind of improvement is welcome. 
+I barely know how to use GitHub or code. Big portion of the code was from a commission on Fivver. I will try my best to correct my mistake. Any kind of improvement are welcome. 
 
 ## Why realease here ? 
 
