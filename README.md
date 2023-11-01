@@ -40,3 +40,12 @@ Python
 ## Link civitai
 
 https://civitai.com/models/118520/prompt-master-discord-bot
+
+![bot2](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/47616133-78da-40eb-a7bc-04854967bd35)
+![botHOW](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/62ebba52-a66d-4de0-ae4f-79455950b702)
+![HOWbot1](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/dc0ee10b-55aa-44f8-84ca-57ece9872934)
+![bot1](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/c753c708-decb-4415-8d3c-b2c4f3a80595)
+
+
+
+
