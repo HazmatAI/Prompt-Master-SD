@@ -28,12 +28,17 @@ ANY IMG from other sources will not work ( copy and paste , Copy from internet, 
 
 ##  FAQ
 
-- Bot say: The image has no parameters... -> BOT DOES Work will work in ANY img if DRAG and DROP from Automatic folder. As long the metadata is still there. 
+- Bot say: The image has no parameters... -> BOT DOES Work will work in ANY img if DRAG and DROP from Automatic folder. As long the metadata is still there.
 
-## How to install 
+##  Bot is already host and paid by me 
+
+If you don't wanna do it yourself --> https://discord.com/oauth2/authorize?client_id=1089935045432713317&permissions=35840&scope=bot
+
+## How to install ( if you wanna do it "your own" )
 
      1) Create a.env file and put your Discord bot token.
-     2) Start.Py
+     2) Create your bot via your discord portal.
+     3) Start.Py
 
 ## How to use 
 
@@ -55,7 +60,3 @@ Comfy Support
 ![botHOW](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/62ebba52-a66d-4de0-ae4f-79455950b702)
 ![HOWbot1](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/dc0ee10b-55aa-44f8-84ca-57ece9872934)
 ![bot1](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/c753c708-decb-4415-8d3c-b2c4f3a80595)
-
-
-
-
