@@ -1,3 +1,6 @@
+##  Prompt Master
+Prompt master is a Discord Bot with the intention of working as PNG information in Automatic111
+
 ##  FYI 
 
 I barely know how to use GitHub or code. 80% of the code was from a commission on Fivver. I will try my best to correct my mistake.
@@ -20,9 +23,12 @@ Not only work for your IMG can display prompts from different users.
 
 See image for usage. Or simply right click on an IMG apps -> Prompt Here / Via DM.
 
-The image has no parameters. → BOT DOES Work will work in ANY img if DRAG and DROP from Automatic folder. As long the metadata is still there. 
 
 ANY IMG from other sources will not work ( copy and paste , Copy from internet, ect ) 
+
+##  FAQ
+
+- Bot say: The image has no parameters... -> BOT DOES Work will work in ANY img if DRAG and DROP from Automatic folder. As long the metadata is still there. 
 
 ## How to install 
 
@@ -31,7 +37,7 @@ ANY IMG from other sources will not work ( copy and paste , Copy from internet, 
 
 ## How to use 
 
-See civiai link
+See second image. Right click on app -> Prompt Here OR Prompt via DM 
 
 ## Built With 
 
@@ -40,6 +46,10 @@ Python
 ## Link civitai
 
 https://civitai.com/models/118520/prompt-master-discord-bot
+
+##  TO DO 
+
+Comfy Support
 
 ![bot2](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/47616133-78da-40eb-a7bc-04854967bd35)
 ![botHOW](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/62ebba52-a66d-4de0-ae4f-79455950b702)
