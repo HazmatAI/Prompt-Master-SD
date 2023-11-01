@@ -7,7 +7,7 @@ I barely know how to use GitHub or code. 80% of the code was from a commission o
 
 ## Why realease here ? 
 
-Do to demand and for sharing "transparency" of the code.
+Due to demand and for sharing "transparency" of the code.
 
 ## Why use the link on civitai ?
 
