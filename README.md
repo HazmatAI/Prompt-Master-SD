@@ -24,6 +24,14 @@ The image has no parameters. → BOT DOES Work will work in ANY img if DRAG and 
 
 ANY IMG from other sources will not work ( copy and paste , Copy from internet, ect ) 
 
+## How to install 
+
+     1) Create a.env file and put your Discord bot token.
+     2) Start.Py
+
+## How to use 
+
+See civiai link
 
 ## Built With 
 
