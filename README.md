@@ -54,7 +54,7 @@ https://civitai.com/models/118520/prompt-master-discord-bot
 
 ##  TO DO 
 
-Comfy Support
+Advanced Comfy Support    ->  Only basic support added / limited fonction for now 
 
 ![bot2](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/47616133-78da-40eb-a7bc-04854967bd35)
 ![botHOW](https://github.com/HazmatAI/Prompt-Master-SD/assets/149615194/62ebba52-a66d-4de0-ae4f-79455950b702)
