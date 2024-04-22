@@ -1,5 +1,5 @@
 ##  Prompt Master
-Prompt master is a Discord Bot with the intention of working as PNG information in Automatic111
+Prompt master is a Discord Bot with the intention of working as PNG information in Automatic1111
 
 ##  FYI 
 
