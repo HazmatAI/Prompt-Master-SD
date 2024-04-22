@@ -1,6 +1,7 @@
 """
 The cog module for the command.
 """
+import json
 
 import discord
 from discord.ext import commands
@@ -54,16 +55,47 @@ class Command(commands.Cog):
         if not image.content_type.startswith("image/"):
             return await ctx.respond("The attachment is not an image.")
         (img:=Image.open(BytesIO(await image.read()))).load()
-        if not (data := img.info.get("parameters", None)):
-            return await ctx.respond("The image has no parameters. Make sure IMG is uploaded from the Automattic111 folder.")
-        parts = data.split("Negative prompt: ", 1)
-        smaller = parts[1].split("Steps: ", 1)
-        other = ""
-        for i in f"Steps: {smaller[1]}".split(", "):
-            try:
-                other += f"\n**{i.split(': ', 1)[0]}: **{i.split(': ', 1)[1]}"
-            except IndexError:
-                other += f",{i}"
+        if data := img.info.get("parameters"):
+            parts = data.split("Negative prompt: ", 1)
+            smaller = parts[1].split("Steps: ", 1)
+            other = ""
+            for i in f"Steps: {smaller[1]}".split(", "):
+                try:
+                    other += f"\n**{i.split(': ', 1)[0]}: **{i.split(': ', 1)[1]}"
+                except IndexError:
+                    other += f",{i}"
+        elif data := img.info.get("Description"):
+            parts = [img.info.get("Description")[1:] + "\n\n"]
+            smaller = [json.loads(img.info.get("Comment"))["uc"]]
+            other = ""
+            # There are some more settings that are given in the image metadata but that are the most important one
+            # Feel free to add more:
+            # "steps": 28, "height": 1216, "width": 832, "scale": 5.0, "uncond_scale": 1.0, "cfg_rescale": 0.0, "seed": 199606024, "n_samples": 1, "hide_debug_overlay": false, "noise_schedule": "native", "sampler": "k_euler", "controlnet_strength": 1.0, "controlnet_model": null, "dynamic_thresholding": false, "dynamic_thresholding_percentile": 0.999, "dynamic_thresholding_mimic_scale": 10.0, "sm": false, "sm_dyn": false, "skip_cfg_below_sigma": 0.0, "lora_unet_weights": null, "lora_clip_weights": null, "signed_hash": "pLmfj2OdW+fuDySDRsNpmmNcFk8iYn2OVXxRY1Wl9M8d3748f5lbwxbZVJtmgoTIHLJFSQwphcpbfkzcpB7SDQ=="}
+            image_data = json.loads(img.info.get("Comment"))
+            other += "\n\n"
+            other += str(f"**Steps**: {image_data['steps']}\n")
+            other += str(f"**Sampler**: {image_data['sampler']}\n")
+            other += str(f"**CFG scale**: {image_data['scale']}\n")
+            other += str(f"**Seed**: {image_data['seed']}\n")
+            other += str(f"**Size**: {image_data['width']}x{image_data['height']}\n")
+            other += str(f"**Signed hash**: {image_data['signed_hash']}\n")
+            other += str(f"**CFG rescale**: {image_data['cfg_rescale']}\n")
+        elif data := img.info.get("prompt"):
+            parts = [json.loads(img.info.get("prompt"))["6"]["inputs"]["text"] + "\n\n"]
+            smaller = [json.loads(img.info.get("prompt"))["7"]["inputs"]["text"]]
+            image_data = json.loads(img.info.get("prompt"))
+            other = ""
+            other += "\n\n"
+            other += str(f"**Steps**: {image_data['3']['inputs']['steps']}\n")
+            other += str(f"**Sampler**: {image_data['3']['inputs']['sampler_name']}\n")
+            other += str(f"**CFG Scale**: {image_data['3']['inputs']['cfg']}\n")
+            other += str(f"**Seed**: {image_data['3']['inputs']['seed']}\n")
+            other += str(f"**Size**: {image_data['5']['inputs']['width']}x{image_data['5']['inputs']['height']}\n")
+            other += str(f"**VAE**: {image_data['4']['inputs']['ckpt_name']}\n")
+            other += str(f"**Model**: {image_data['11']['inputs']['filename_prefix']}\n")
+        else:
+            return await ctx.respond(
+                "The image has no parameters. Make sure IMG is uploaded from the Automattic111 folder.")
         if not dm:
             await ctx.respond(
                 embed=discord.Embed(
