@@ -17,9 +17,6 @@ I barely know how to use GitHub or code. Big portion of the code was from a comm
 
 Due to demand and for sharing "transparency" of the code.
 
-## Why use the link on civitai ?
-
-I have already paid for a host, so the bot can be online 24/7. So you don't have to run it locally.
 
 ## Quick description 
 
