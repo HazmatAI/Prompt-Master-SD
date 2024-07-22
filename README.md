@@ -1,3 +1,11 @@
+## Uptade 22/07/2024
+
+Guild Members, Guild Presence, and Message Content privileges have been removed since the bot is on more than 100 servers. 
+
+So the only way is to host for yourself ! 
+
+
+------------------------------------------------------------------------------------------------
 ##  Prompt Master
 Prompt master is a Discord Bot with the intention of working as PNG information in Automatic1111
 
@@ -30,11 +38,8 @@ ANY IMG from other sources will not work ( copy and paste , Copy from internet, 
 
 - Bot say: The image has no parameters... -> BOT DOES Work will work in ANY img if DRAG and DROP from Automatic folder. As long the metadata is still there.
 
-##  Bot is already host and paid by me 
 
-If you don't wanna do it yourself --> https://discord.com/oauth2/authorize?client_id=1089935045432713317&permissions=35840&scope=bot
-
-## How to install ( if you wanna do it "your own" )
+## How to install 
 
      1) Create a.env file and put your Discord bot token.
      2) Create your bot via your discord portal.
@@ -48,9 +53,7 @@ See second image. Right click on app -> Prompt Here OR Prompt via DM
 
 Python 
 
-## Link civitai
 
-https://civitai.com/models/118520/prompt-master-discord-bot
 
 ##  TO DO 
 
